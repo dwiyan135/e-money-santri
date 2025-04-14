@@ -1,68 +1,160 @@
-# CodeIgniter 4 Application Starter
+## ✅ Bahasa Indonesia (`README.md`) 
 
-## What is CodeIgniter?
+# 💳 E-Money Santri
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+**E-Money Santri** adalah aplikasi web berbasis CodeIgniter 4 yang dirancang untuk membantu pengelolaan keuangan di lingkungan pesantren. Aplikasi ini menyediakan fitur manajemen data santri, pencatatan transaksi, dan laporan keuangan secara terstruktur.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 🧩 Fitur Utama
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+- Manajemen data santri  
+- Pencatatan transaksi keuangan  
+- Laporan dan histori transaksi  
+- Dashboard informasi keuangan  
+- Sistem login pengguna  
+- Dibangun dengan CodeIgniter 4
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## 🛠️ Langkah Instalasi
 
-## Installation & updates
+1. **Clone Repositori**
+```
+git clone https://github.com/dwiyan135/e-money-santri.git
+cd e-money-santri
+```
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+2. **Install Dependensi**
+```
+composer install
+```
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+3. **Salin dan Ubah Konfigurasi `.env`**
+```
+cp env .env
+```
+Edit pengaturan koneksi database di file `.env`:
+```
+database.default.hostname = localhost
+database.default.database = e_money_db
+database.default.username = root
+database.default.password =
+```
 
-## Setup
+4. **Buat Database & Jalankan Migrasi**
+```
+php spark migrate
+```
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+5. **Jalankan Server Lokal**
+```
+php spark serve
+```
+Akses melalui browser: `http://localhost:8080`
 
-## Important Change with index.php
+## 🔐 Login Awal (Jika Tersedia)
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Jika tidak ada sistem registrasi, data admin bisa dimasukkan langsung ke database.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+Contoh:
+- Username: `admin`  
+- Password: `admin123` *(pastikan terenkripsi jika login aktif)*
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## 🧯 Troubleshooting
 
-## Repository Management
+- Perintah `spark` tidak dikenali:
+```
+php vendor/bin/spark
+```
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+- Folder `vendor` tidak ada:
+```
+composer install
+```
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- Error koneksi database:
+  - Periksa file `.env`
+  - Pastikan database sudah dibuat dan terhubung
 
-## Server Requirements
+## 📄 Lisensi
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+Proyek ini menggunakan lisensi **MIT License**.
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+---
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+## ✅ English (`README.md`) 
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+# 💳 E-Money Santri
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+**E-Money Santri** is a web application built using CodeIgniter 4, designed to help manage financial operations in Islamic boarding schools (pesantren). It features student management, transaction logging, and structured reporting.
+
+## 🧩 Key Features
+
+- Student data management  
+- Financial transaction logging  
+- Transaction history and reports  
+- Financial dashboard  
+- User authentication system  
+- Built with CodeIgniter 4
+
+## 🛠️ Installation Steps
+
+1. **Clone the Repository**
+```
+git clone https://github.com/dwiyan135/e-money-santri.git
+cd e-money-santri
+```
+
+2. **Install Dependencies**
+```
+composer install
+```
+
+3. **Copy and Configure `.env`**
+```
+cp env .env
+```
+Update your database config in the `.env` file:
+```
+database.default.hostname = localhost
+database.default.database = e_money_db
+database.default.username = root
+database.default.password =
+```
+
+4. **Create Database & Run Migrations**
+```
+php spark migrate
+```
+
+5. **Start the Development Server**
+```
+php spark serve
+```
+Visit in your browser: `http://localhost:8080`
+
+## 🔐 Default Login (If Available)
+
+If there's no registration system, you can manually insert an admin user in the database.
+
+Example:
+- Username: `admin`  
+- Password: `admin123` *(make sure it's hashed properly)*
+
+## 🧯 Troubleshooting
+
+- `spark` not recognized:
+```
+php vendor/bin/spark
+```
+
+- Missing `vendor/` folder:
+```
+composer install
+```
+
+- Database connection errors:
+  - Check your `.env` file
+  - Make sure the database exists and credentials are correct
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
