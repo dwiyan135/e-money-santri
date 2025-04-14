@@ -1,5 +1,39 @@
-The MIT License (MIT)
+ID:
 
+Lisensi MIT (MIT License)
+
+Hak Cipta (c) 2024 Dwiyan (https://github.com/dwiyan135)
+Berdasarkan CodeIgniter 4 oleh CodeIgniter Foundation
+Hak Cipta (c) 2014-2019 British Columbia Institute of Technology
+Hak Cipta (c) 2019-2024 CodeIgniter Foundation
+
+Dengan ini diberikan izin, secara gratis, kepada siapa pun yang memperoleh salinan
+perangkat lunak ini dan file dokumentasi terkait ("Perangkat Lunak"), untuk
+menggunakan Perangkat Lunak tanpa batasan, termasuk namun tidak terbatas pada hak
+untuk menggunakan, menyalin, mengubah, menggabungkan, menerbitkan, mendistribusikan,
+mensublisensikan, dan/atau menjual salinan Perangkat Lunak, serta mengizinkan orang
+lain kepada siapa Perangkat Lunak diberikan untuk melakukan hal yang sama, dengan
+ketentuan berikut:
+
+Pemberitahuan hak cipta di atas dan pemberitahuan izin ini harus disertakan dalam
+setiap salinan atau bagian substansial dari Perangkat Lunak.
+
+PERANGKAT LUNAK INI DIBERIKAN "SEBAGAIMANA ADANYA", TANPA JAMINAN APA PUN, BAIK
+TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA JAMINAN DIPERDAGANGKAN,
+KESESUAIAN UNTUK TUJUAN TERTENTU DAN NON-PELANGGARAN. DALAM KEADAAN APA PUN PARA
+PENCIPTA ATAU PEMEGANG HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS KLAIM, KERUSAKAN, ATAU
+LIABILITAS LAIN, BAIK DALAM KONTRAK, PERBUATAN MELAWAN HUKUM ATAU LAINNYA, YANG TIMBUL
+DARI, DARI PENGGUNAAN ATAU HUBUNGAN LAIN DENGAN PERANGKAT LUNAK INI.
+
+Perangkat lunak ini mencakup bagian-bagian dari CodeIgniter 4, yang dilisensikan di
+bawah Lisensi MIT oleh CodeIgniter Foundation.
+
+EN:
+
+MIT License
+
+Copyright (c) 2024 Dwiyan (https://github.com/dwiyan135)
+Based on CodeIgniter 4 by CodeIgniter Foundation
 Copyright (c) 2014-2019 British Columbia Institute of Technology
 Copyright (c) 2019-2024 CodeIgniter Foundation
 
@@ -20,3 +54,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+This software includes portions of CodeIgniter 4,
+licensed under the MIT License by the CodeIgniter Foundation.
+
